@@ -1,0 +1,10 @@
+site_name: Rovothome docs
+nav:
+  - chandler_todo: chandler_todo.md
+  - ceily: 
+    - User manual: ceily/user_manual.md
+  - wally: 
+    - User manual: wally/user_manual.md
+
+theme:
+  name: 'rtd-dropdown'
