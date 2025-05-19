@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>User manual - Rovothome docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "User manual";
+    var mkdocs_page_input_path = "ceily\\user_manual.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Rovothome docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../../chandler_todo/">chandler_todo</a>
+  </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">ceily</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        User manual
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+          
+
+  <li class="toctree-l3 current with-children">
+    <a href="#_1">
+      모션 제어
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3 current">
+    <ul class="subnav-l3 current">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_2">기본 동작 제어</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_3">긴급 정지</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_4">다리 제어</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#_5">
+      안전 제어
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_6">올림 동작시</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_7">내림 동작시</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_8">올림/내림 공통</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#led">
+      LED 제어
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_9">버튼 제어</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#_10">동작 중 제어</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#ble">BLE 제어</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_11">알림</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_12">상태 정보 표시</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+
+  <li class="toctree-l2">
+    <a href="#internal-manual">
+      Internal manual
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l2">
+    <ul class="subnav-l2 toc-hidden">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_13">시리얼 번호</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#ble_1">ble 통신 속도</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_14">토크 학습 기능</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_15">장치의 치수</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_16">장비 상태</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_17">다리의 상태</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+
+  <li class="toctree-l2">
+    <a href="#device-setup">
+      Device setup
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l2">
+    <ul class="subnav-l2 toc-hidden">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_18">장비 연결</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_19">장비 타입 설정</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_20">캘리브레이션 진행</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#_21">캘리브레이션 과정</a>
+        </li>
+    
+    </ul>
+  </li>
+
+
+  
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">wally</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../wally/user_manual/">User manual</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Rovothome docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>ceily &raquo;</li>
+        
+      
+    
+    <li>User manual</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="user-manual">User manual</h1>
+<p>사용자가 Ceily와 인터렉션 하는 부분을 설명한다.
+빨간색으로 표시된 항목은 아직 구현되지 않은 부분이다.</p>
+<h2 id="_1">모션 제어</h2>
+<h3 id="_2">기본 동작 제어</h3>
+<ol>
+<li>조작 버튼 또는 앱(ble)을 통해 위/아래로 Ceily가 제어 가능해야 한다.</li>
+<li>위/아래 버튼을 누르면 해당 방향으로 움직이며, 어떤 방향으로든 한번 더 누르면 멈춘다.</li>
+<li>동작 시작시 S-Curve로 가속하며 3000ms내 정속 구간으로 이동한다.</li>
+<li>동작 중 양 끝 Limit 센서를 만나면 S-Curve로 감속하여 500ms내에 정지한다.</li>
+<li>침대의 이동속도는 100mm/sec로 고정한다.</li>
+<li>동작이 끝나고 속도가 0이 되면 모터를 Disable하여 사용자가 수동으로 움직일 수 있도록 한다.</li>
+</ol>
+<h3 id="_3">긴급 정지</h3>
+<ol>
+<li>토크, ToF 센서를 통해 외부 장애 요소가 인식되는 경우 긴급 정지(속도를 0으로 변경)한다.</li>
+<li><span style="color: red">E-Stop 스위치가 눌리면 긴급 정지한다.</span></li>
+</ol>
+<h2 id="_4">다리 제어</h2>
+<ol>
+<li>침대가 위로 움직이면서 다리는 0도로 접힌다.</li>
+<li>침대가 아래로 움직이면서 다리는 90도로 펴진다.</li>
+<li>다리가 0~90도 사이에 위치하는 한 1,2 번이 지켜져야 한다. ex) 30도에서 시작 하는 경우</li>
+<li><span style="color: red">속도는 15도/sec로 제어한다 (?): 90도를 6초에</span></li>
+</ol>
+<h2 id="_5">안전 제어</h2>
+<h3 id="_6">올림 동작시</h3>
+<ol>
+<li>올림 동작 시작 후 2초 내에 침대 위에 2kg 이상의 하중을 토크 이상 여부를 통해 판별하고 멈춘다.</li>
+<li>올림 동작 중 외부요인으로 인한 충격이 감지되면, 동작을 멈추고 긴급 정지한다.</li>
+</ol>
+<h3 id="_7">내림 동작시</h3>
+<ol>
+<li>내림 동작 시작 시점에서 ToF를 통해 침대 밑 장애물을 감지하고, 있을 시 동작하지 않는다.</li>
+<li>내림 동작 중 토크 감지를 통해 충격이 감지되면 긴급 정지한다.</li>
+<li>ToF 센서가 연결되지 않았거나 동작하지 않으면, 하강하지 않는다.</li>
+</ol>
+<h3 id="_8">올림/내림 공통</h3>
+<ol>
+<li><span style="color: red">보드와 모터의 연결이 끊어지는 경우 긴급 정지 한다.</span></li>
+</ol>
+<h2 id="led">LED 제어</h2>
+<h3 id="_9">버튼 제어</h3>
+<p><img alt="led_button_control" src="../images/led_button_control.png" /></p>
+<h3 id="_10">동작 중 제어</h3>
+<h3 id="ble">BLE 제어</h3>
+<h2 id="_11">알림</h2>
+<p>아래 요소에 대해 알림을 제공한다.</p>
+<ol>
+<li>동작의 시작/멈춤 이벤트와 명령의 주체</li>
+<li>동작 중 이상이 감지되었을 때 에러코드</li>
+</ol>
+<h2 id="_12">상태 정보 표시</h2>
+<ol>
+<li>기기의 상태 정보를 내보낸다.</li>
+</ol>
+<h1 id="internal-manual">Internal manual</h1>
+<h2 id="_13">시리얼 번호</h2>
+<ol>
+<li>각 장치별 고유 8자리 시리얼 번호를 갖는다.</li>
+</ol>
+<h2 id="ble_1">ble 통신 속도</h2>
+<ol>
+<li>Ex) device status를 읽어 들이는 통신을 100ms 마다 통신한다.</li>
+<li>통신 관련 파라미터는 아래와 같다.</li>
+</ol>
+<h2 id="_14">토크 학습 기능</h2>
+<ol>
+<li>환경에 맞는 토크값을 학습할 수 있는 기능을 제공한다.</li>
+<li>학습한 결과를 저장할 수 있는 기능을 제공한다.</li>
+<li>학습한 결과를 초기화 할 수 있는 기능을 제공한다.</li>
+</ol>
+<h2 id="_15">장치의 치수</h2>
+<ol>
+<li>장치의 치수를 확인/설정할 수 있는 프로파일을 제공한다.</li>
+<li>장치의 치수가 설정되지 않았다면 동작하지 않는다.</li>
+</ol>
+<h2 id="_16">장비 상태</h2>
+<ol>
+<li>장비의 상태를 확인 할 수 있는 프로파일을 제공한다.</li>
+<li>장비의 상태가 정상이 아니라면 동작하지 않는다.</li>
+</ol>
+<h2 id="_17">다리의 상태</h2>
+<ol>
+<li>다리의 상태와 위치를 확인 할 수 있는 프로파일을 제공한다.</li>
+</ol>
+<h1 id="device-setup">Device setup</h1>
+<h2 id="_18">장비 연결</h2>
+<ol>
+<li>장비를 설치한다.</li>
+<li>장비를 켠다.</li>
+<li>작업자 앱을 통해 장비와 연결한다.</li>
+<li><span style="color: red">Admin 설정 시작 명령을 보낸다.</span></li>
+<li>Admin 설정 완료 flag가 없으면 장비가 동작하지 않음</li>
+</ol>
+<h2 id="_19"><span style="color: red">장비 타입 설정</span></h2>
+<ol>
+<li>Admin 설정 중임을 확인한다.</li>
+<li>작업자 앱에서 장비의 타입 및 치수를 설정한다.</li>
+<li>타입: 가로/세로 타입</li>
+<li>치수<ol>
+<li>침대 너비</li>
+<li>침대 길이</li>
+</ol>
+</li>
+<li>장비 타입 및 치수를 설정 완료한 후 저장한다.</li>
+</ol>
+<h2 id="_20"><span style="color: red">캘리브레이션 진행</span></h2>
+<ol>
+<li>장비를 제일 아래까지 손으로 내린다.</li>
+<li>Ceily의 위치가 0으로 설정된다.</li>
+<li>캘리브레이션 진행 버튼을 누른다.</li>
+<li>캘리브레이션이 완료된 후 저장 버튼을 누른다.</li>
+</ol>
+<h2 id="_21"><span style="color: red">캘리브레이션 과정</span></h2>
+<ol>
+<li>Down 리밋이 걸려 있는지 확인한다.</li>
+<li>Up으로 이동한다.</li>
+<li>Limit이 걸리면: Stroke를 저장한다.</li>
+<li>Limit이 걸리지 않은채 멈추면: 캘리브레이션을 일시중지한다.</li>
+<li>Down으로 이동한다.</li>
+<li>토크 모델의 학습률이 100%가 될 때까지 Up-Down을 반복한다.</li>
+<li>토크 모델이 모두 학습되었으면 저장하고, 캘리브레이션을 종료한다.</li>
+<li>캘리브레이션 결과를 작업자에게 알린다.</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../wally/user_manual/" class="btn btn-neutral float-right" title="User manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../chandler_todo/" class="btn btn-neutral" title="chandler_todo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../chandler_todo/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../wally/user_manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
