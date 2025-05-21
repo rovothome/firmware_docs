@@ -8,11 +8,16 @@
 
 ## 구현되지 않은 필수&개선 기능
 
+### Device manager motion controller로 부터 분리하기
+
+- <span style="color:green"> Wally</span>
+- Ceily
+
 ### State pattern 적용
 
-- State Profile대로 정의하기 - moving 이런거
-- State에 대해 속도를 Kinematics에서 가져오기
-- State pattern에 적용될 부분을 함수화 하기
+- <span style="color:green">State Profile대로 정의하기</span>
+- <span style="color:green">State pattern에 적용될 부분을 함수화 하기</span>
+![state_diagram](wally/images/wally-state-diagram.png)
 
 ### LED 마무리
 
@@ -32,7 +37,11 @@
 - 장치 상태 read 인터페이스 제공하기
 - 장치 상태에 따라 동작 상태 결정하기
 
+### Kinematics
+- State에 대해 속도를 Kinematics에서 가져오기
+
 ### Wally
+- S-curve 제어
 - wally 시리얼 번호 적용
 - Kinematics 로직 점검: 왜 한번에 맞춰지지 않지?
 - 포토 센서 연동하기
