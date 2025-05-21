@@ -91,6 +91,11 @@
     
       
         <li class="toctree-l3">
+          <a class="toctree-l4" href="#device-manager-motion-controller">Device manager motion controller로 부터 분리하기</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
           <a class="toctree-l4" href="#state-pattern">State pattern 적용</a>
         </li>
     
@@ -107,6 +112,11 @@
       
         <li class="toctree-l3">
           <a class="toctree-l4" href="#_3">장치 관리</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#kinematics">Kinematics</a>
         </li>
     
       
@@ -249,11 +259,16 @@
 <p>이 후 리펙토링을 통해 코드 안정성을 높여 간다.</p>
 <p>이를 위해 버그, 안정성 향상, 구현되지 않은 기능에 대해 정리하고 우선순위를 파악한다.</p>
 <h2 id="_1">구현되지 않은 필수&amp;개선 기능</h2>
+<h3 id="device-manager-motion-controller">Device manager motion controller로 부터 분리하기</h3>
+<ul>
+<li><span style="color:green"> Wally</span></li>
+<li>Ceily</li>
+</ul>
 <h3 id="state-pattern">State pattern 적용</h3>
 <ul>
-<li>State Profile대로 정의하기 - moving 이런거</li>
-<li>State에 대해 속도를 Kinematics에서 가져오기</li>
-<li>State pattern에 적용될 부분을 함수화 하기</li>
+<li><span style="color:green">State Profile대로 정의하기</span></li>
+<li><span style="color:green">State pattern에 적용될 부분을 함수화 하기</span>
+<img alt="state_diagram" src="../wally/images/wally-state-diagram.png" /></li>
 </ul>
 <h3 id="led">LED 마무리</h3>
 <ul>
@@ -275,8 +290,13 @@
 <li>장치 상태 read 인터페이스 제공하기</li>
 <li>장치 상태에 따라 동작 상태 결정하기</li>
 </ul>
+<h3 id="kinematics">Kinematics</h3>
+<ul>
+<li>State에 대해 속도를 Kinematics에서 가져오기</li>
+</ul>
 <h3 id="wally">Wally</h3>
 <ul>
+<li>S-curve 제어</li>
 <li>wally 시리얼 번호 적용</li>
 <li>Kinematics 로직 점검: 왜 한번에 맞춰지지 않지?</li>
 <li>포토 센서 연동하기</li>
